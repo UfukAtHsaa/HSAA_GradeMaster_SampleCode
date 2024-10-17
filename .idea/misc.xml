@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="f1897aec-6c58-49b1-9a1d-6386e86ebeeb" />
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/grade-master-service/pom.xml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
