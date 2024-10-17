@@ -1,0 +1,54 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+*.tmp
+*.out
+
+# Spring Boot
+target/
+!src/main/resources/static/
+!src/main/resources/templates/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+.idea_modules/
+
+# Maven
+.mvn/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*.bak
