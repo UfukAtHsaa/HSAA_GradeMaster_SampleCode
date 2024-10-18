@@ -2,10 +2,12 @@ package de.hsaalen.grademaster.grademasterservice.service;
 
 import de.hsaalen.grademaster.grademasterservice.domain.Post;
 import de.hsaalen.grademaster.grademasterservice.repository.PostRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
 
 @Service
 public class PostService {
@@ -31,6 +33,12 @@ public class PostService {
 
     public List<Post> getPosts() {
         return postRepository.findAll();
+    }
+
+    public List<Post> getPostsPaged(int pageNo, int pageSize) {
+        Pageable pageable = PageRequest.of(pageNo, pageSize);
+        Page<Post> all = postRepository.findAll(pageable);
+        return all.getContent();
     }
 
 }
